@@ -102,6 +102,7 @@ router.post('/', async (req, res, next) => {
     const out = await user.save();
     if (!out) {
       res.status(500).json({ message: "Not Success" })
+      return
     }
 
     const html = 'Hi there, <br/> Thank you for registering! <br/><br/> Please verify your email by typing the following token <br/> Token :<b> ' + secrettoken + ' </b> <br/> On the following page : <a href="http://localhost:3000/users/verify"> http://localhost:3000/users/verify</a> <br/><br/> Thank you'
@@ -175,8 +176,11 @@ router.put('/:id', verify.ensureToken, async (req, res, next) => {
     }
 
     const hash = await users.hashPassword(result.value.password)
-    result.value.password = hash;
-    const update = await users.findByIdAndUpdate({ _id: req.params.id }, result.value);
+    user.name = result.value.name;
+    user.email = result.value.email;
+    user.password = hash;
+
+    const update = await user.save();
     if (!update) {
       res.status(404).json({ message: "Not Success" })
       return
@@ -185,6 +189,7 @@ router.put('/:id', verify.ensureToken, async (req, res, next) => {
     const data = await users.findOne({ _id: req.params.id });
     if (!data) {
       res.status(404).json({ message: "Not Found" })
+      return
     }
 
     delete data.password;
