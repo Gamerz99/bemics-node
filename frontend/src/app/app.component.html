@@ -1,0 +1,141 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="spinner">
+  <div class="spinner_wrapper">
+    <div class="spinner_folding_cube">
+      <div class="spinner_cube1 spinner_cube"></div>
+      <div class="spinner_cube2 spinner_cube"></div>
+      <div class="spinner_cube4 spinner_cube"></div>
+      <div class="spinner_cube3 spinner_cube"></div>
+    </div>
+  </div>
+</div>
+
+
+<div class="wrapper">
+
+  <header class="uk-small-hidden header">
+    <nav class="uk-navbar header-nav">
+      <div class="uk-container uk-container-center">
+        <a class="uk-navbar-brand logo_link">
+          <img class="uk-responsive-height logo" src="../assets/images/logo_white.png" alt="">
+        </a>
+        <div class="uk-navbar-flip uk-visible-large">
+          <ul class="uk-navbar-nav header-nav-list">
+            <li class="header_nav_list_item">
+              <a routerLink="/home" routerLinkActive="active" class="link_features header_nav_list_item_link"
+                href="#">Home</a>
+            </li>
+            <li class="header_nav_list_item">
+              <a routerLink="/team" routerLinkActive="active" class="link_offer header_nav_list_item_link"
+                href="#">Team</a>
+            </li>
+            <li class="header_nav_list_item">
+              <a routerLink="/portfolio" routerLinkActive="active" class="link_pricing header_nav_list_item_link"
+                href="#">Portfolio</a>
+            </li>
+            <li class="header_nav_list_item">
+              <a routerLink="/contact" routerLinkActive="active" class="link_customers header_nav_list_item_link"
+                href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="uk-navbar-flip uk-hidden-large header_navbar_mobile_block">
+          <div data-ng-click="toggleMobileNav($event)" class="uk-navbar-toggle header_navbar_mobile"></div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <router-outlet></router-outlet>
+
+  <footer class="footer">
+    <div class="uk-container uk-container-center uk-text-center">
+      <ul class="uk-list social_list">
+        <li class="social_list_item">
+          <a class="uk-icon-facebook social_list_item_link" href="#"></a>
+        </li>
+        <li class="social_list_item">
+          <a class="uk-icon-twitter social_list_item_link" href="#"></a>
+        </li>
+        <li class="social_list_item">
+          <a class="uk-icon-google-plus social_list_item_link" href="#"></a>
+        </li>
+        <li class="social_list_item">
+          <a class="uk-icon-linkedin social_list_item_link" href="#"></a>
+        </li>
+        <li class="social_list_item">
+          <a class="uk-icon-pinterest social_list_item_link" href="#"></a>
+        </li>
+        <li class="social_list_item">
+          <a class="uk-icon-dribbble social_list_item_link" href="#"></a>
+        </li>
+        <li class="social_list_item">
+          <a class="uk-icon-youtube social_list_item_link" href="#"></a>
+        </li>
+      </ul>
+      <div class="footer_message">© 2018 Startup. All Rights Reserved</div>
+    </div>
+  </footer>
+
+
+  <div data-ng-click="scrollTop()" class="scroll_top"></div>
+
+</div>
+
+<div id="mobile_nav" class="uk-offcanvas">
+  <div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
+    <ul class="uk-nav uk-nav-offcanvas">
+      <li class="">
+        <a data-ng-click="scrollNav($event)" class="link_features" href="#">Features</a>
+      </li>
+      <li class="">
+        <a data-ng-click="scrollNav($event)" class="link_offer" href="#">Offer</a>
+      </li>
+      <li class="">
+        <a data-ng-click="scrollNav($event)" class="link_pricing" href="#">Pricing</a>
+      </li>
+      <li class="">
+        <a data-ng-click="scrollNav($event)" class="link_clients" href="#">Clients</a>
+      </li>
+      <li class="">
+        <a data-ng-click="scrollNav($event)" class="link_facts" href="#">Facts</a>
+      </li>
+      <li class="">
+        <a data-ng-click="scrollNav($event)" class="link_projects" href="#">Projects</a>
+      </li>
+      <li class="">
+        <a data-ng-click="scrollNav($event)" class="link_team" href="#">Team</a>
+      </li>
+      <li class="">
+        <a data-ng-click="scrollNav($event)" class="link_customers" href="#">Customers</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div id="modal_subscribe" class="uk-modal subscribe_window">
+  <div class="uk-modal-dialog uk-text-center uk-border-rounded">
+    <h4 class="uk-h4 uk-text-contrast subscribe_window_title">Subscribe to our newsletter</h4>
+
+    <form data-ng-submit="mailchimpForm" class="uk-form form_sign_in" autocomplete="off">
+      <div class="uk-grid uk-grid-collapse uk-container-center uk-width-medium-3-4">
+        <div class="uk-width-medium-3-4 uk-margin-bottom">
+          <input name="email" class="uk-width-1-1 uk-text-contrast form_input" type="email"
+            placeholder="Enter your e-mail">
+        </div>
+        <div class="uk-width-medium-1-4 uk-margin-bottom">
+          <button class="uk-width-1-1 uk-button button_custom_green form_button" type="submit">Subscribe</button>
+        </div>
+      </div>
+      <div class="response_wrapper">
+
+        <div class="success">E-mail has been added successfully.</div>
+        <div class="success_response"></div>
+
+        <div class="error">E-mail must be valid and message must be longer than 1 character.</div>
+        <div class="error_response"></div>
+      </div>
+    </form>
+    <a class="uk-modal-close uk-close uk-border-circle subscribe_window_close"></a>
+  </div>
+</div>
