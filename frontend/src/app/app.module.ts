@@ -6,7 +6,9 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ProductComponent } from './product/product.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
-import { TeamComponent } from './team/team.component';
+import { ContactComponent } from './contact/contact.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { TeamComponent } from './team/team.component';
     HomeComponent,
     ProductComponent,
     PortfolioComponent,
-    TeamComponent
+    ContactComponent,
+    LoginComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,

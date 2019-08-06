@@ -12,7 +12,6 @@
 
 
 <div class="wrapper">
-
   <header class="uk-small-hidden header">
     <nav class="uk-navbar header-nav">
       <div class="uk-container uk-container-center">
@@ -23,19 +22,26 @@
           <ul class="uk-navbar-nav header-nav-list">
             <li class="header_nav_list_item">
               <a routerLink="/home" routerLinkActive="active" class="link_features header_nav_list_item_link"
-                href="#">Home</a>
+                href="/home">Home</a>
             </li>
             <li class="header_nav_list_item">
-              <a routerLink="/team" routerLinkActive="active" class="link_offer header_nav_list_item_link"
-                href="#">Team</a>
+              <a routerLink="/product" routerLinkActive="active" class="link_offer header_nav_list_item_link"
+                href="/product">Product</a>
             </li>
             <li class="header_nav_list_item">
               <a routerLink="/portfolio" routerLinkActive="active" class="link_pricing header_nav_list_item_link"
-                href="#">Portfolio</a>
+                href="/portfolio">Portfolio</a>
             </li>
             <li class="header_nav_list_item">
               <a routerLink="/contact" routerLinkActive="active" class="link_customers header_nav_list_item_link"
-                href="#">Contact</a>
+                href="/contact">Contact</a>
+            </li>
+            <li class="header_nav_list_item">
+              <a class="link_customers header_nav_list_item_link" routerLink="/login" routerLinkActive="active">
+                <div class="uk-button uk-border-rounded green_button container_button_message">
+                  Login
+                </div>
+              </a>
             </li>
           </ul>
         </div>
@@ -73,7 +79,7 @@
           <a class="uk-icon-youtube social_list_item_link" href="#"></a>
         </li>
       </ul>
-      <div class="footer_message">© 2018 Startup. All Rights Reserved</div>
+      <div class="footer_message">© 2019 Startup. All Rights Reserved</div>
     </div>
   </footer>
 
@@ -86,28 +92,19 @@
   <div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
     <ul class="uk-nav uk-nav-offcanvas">
       <li class="">
-        <a data-ng-click="scrollNav($event)" class="link_features" href="#">Features</a>
+        <a data-ng-click="scrollNav($event)" class="link_features" routerLink="/home" href="#">Home</a>
       </li>
       <li class="">
-        <a data-ng-click="scrollNav($event)" class="link_offer" href="#">Offer</a>
+        <a data-ng-click="scrollNav($event)" class="link_offer" routerLink="/product" href="#">Product</a>
       </li>
       <li class="">
-        <a data-ng-click="scrollNav($event)" class="link_pricing" href="#">Pricing</a>
+        <a data-ng-click="scrollNav($event)" class="link_pricing" routerLink="/portfolio" href="#">Portfolio</a>
       </li>
       <li class="">
-        <a data-ng-click="scrollNav($event)" class="link_clients" href="#">Clients</a>
+        <a data-ng-click="scrollNav($event)" class="link_clients" routerLink="/contact" href="#">Contact</a>
       </li>
       <li class="">
-        <a data-ng-click="scrollNav($event)" class="link_facts" href="#">Facts</a>
-      </li>
-      <li class="">
-        <a data-ng-click="scrollNav($event)" class="link_projects" href="#">Projects</a>
-      </li>
-      <li class="">
-        <a data-ng-click="scrollNav($event)" class="link_team" href="#">Team</a>
-      </li>
-      <li class="">
-        <a data-ng-click="scrollNav($event)" class="link_customers" href="#">Customers</a>
+        <a data-ng-click="scrollNav($event)" class="link_facts" routerLink="/login" href="#">Login</a>
       </li>
     </ul>
   </div>

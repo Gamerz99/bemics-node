@@ -229,7 +229,7 @@
 						engine.rain([[3, 3, 0.88], [5, 5, 0.9], [6, 2, 1]], 100);
 					};
 					$scope.image.crossOrigin = 'anonymous';
-					$scope.image.src = '../images/photo_1.jpg';
+					$scope.image.src = '../assets/images/photo_1.jpg';
 				}
 				$scope.run();
 			}

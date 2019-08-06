@@ -81,7 +81,19 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "src/assets/js/jquery.min.js",
+              "src/assets/js/angular.min.js",
+              "src/assets/js/ngTouch.min.js",
+              "src/assets/js/uikit.min.js",
+              "src/assets/js/slideshow.min.js",
+              "src/assets/js/slideshow-fx.min.js",
+              "src/assets/js/slider.min.js",
+              "src/assets/js/lightbox.min.js",
+              "src/assets/js/countUp.min.js",
+              "src/assets/js/jquery.ajaxchimp.min.js",
+              "src/assets/js/scripts.ang.js"
+            ],
             "assets": [
               "src/favicon.ico",
               "src/assets"
