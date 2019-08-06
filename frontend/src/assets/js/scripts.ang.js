@@ -135,7 +135,7 @@
 				$('.spinner').animate({ opacity: 0 }, 500, function () {
 					$(this).remove();
 				});
-			}, 2500);
+			}, 2000);
 		}
 
 		$scope.removeSpinner();

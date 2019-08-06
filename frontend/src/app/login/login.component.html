@@ -1,27 +1,54 @@
-<div class="uk-height-viewport">
-  <section
-    class="uk-cover-background uk-position-relative uk-flex uk-flex-middle uk-overflow-hidden grey_overlay  menu-height2">
-    <div>
-      <img src="../../assets/images/slide/img_bg_5.jpg" alt="">
-    </div>
-  </section>
-
-  <section class="container login">
-    <div class="uk-container uk-container-center uk-width-1-1 uk-text-center uk-position-relative container_block">
-      <div class="login-container container_block">
-        <div id="output"></div>
-        <div class="avatar"><img src="../../assets/images/icon.svg " width="70"></div>
-        <div class="form-box ">
-          <form action="" method="">
-            <input name="email" type="text" placeholder="Email">
-            <input type="password" placeholder="Password">
-            <div class="uk-width-small-1-1 uk-margin-bottom uk-margin-top">
-              <button class="uk-width-1-1 uk-button button_custom_orange form_button" type="submit">Login</button>
-              <a class="login-text" routerLink="/register">sign up</a>
-            </div>
-          </form>
-        </div>
+<header class="uk-small-hidden header2">
+  <nav class="uk-navbar header-nav">
+    <div class="uk-container uk-container-center">
+      <a class="uk-navbar-brand logo_link" routerLink="/home">
+        <img class="uk-responsive-height logo" src="../assets/images/logo_black.png" alt="">
+      </a>
+      <div class="uk-navbar-flip uk-visible-large">
+        <ul class="uk-navbar-nav header-nav-list">
+          <li class="header_nav_list_item">
+            <a routerLinkActive="active" class="link_features header_nav_list_item_link" href="/home">Home</a>
+          </li>
+          <li class="header_nav_list_item">
+            <a routerLinkActive="active" class="link_offer header_nav_list_item_link" href="/product">Product</a>
+          </li>
+          <li class="header_nav_list_item">
+            <a routerLinkActive="active" class="link_pricing header_nav_list_item_link" href="/portfolio">Portfolio</a>
+          </li>
+          <li class="header_nav_list_item">
+            <a routerLinkActive="active" class="link_customers header_nav_list_item_link" href="/contact">Contact</a>
+          </li>
+          <li class="header_nav_list_item">
+            <a class="link_customers header_nav_list_item_link" routerLink="/login" routerLinkActive="active">
+              <div class="uk-button uk-border-rounded green_button container_button_message">
+                Login
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="uk-navbar-flip uk-hidden-large header_navbar_mobile_block">
+        <div data-ng-click="toggleMobileNav($event)" class="uk-navbar-toggle header_navbar_mobile"></div>
       </div>
     </div>
-  </section>
-</div>
+  </nav>
+</header>
+
+<section class="container login section">
+  <div class="uk-container uk-container-center uk-width-1-1 uk-text-center uk-position-relative container_block">
+    <div class="login-container container_block">
+      <div id="output"></div>
+      <div class="avatar"><img src="../../assets/images/icon.svg " width="70"></div>
+      <div class="form-box ">
+        <form action="" method="">
+          <input name="email" type="text" placeholder="Email">
+          <input type="password" placeholder="Password">
+          <div class="uk-width-small-1-1 uk-margin-bottom uk-margin-top">
+            <button class="uk-width-1-1 uk-button button_custom_orange form_button" type="submit">Login</button>
+            <a class="login-text" routerLink="/register">sign up</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

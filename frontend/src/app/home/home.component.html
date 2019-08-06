@@ -1,4 +1,41 @@
 <html class="particles_effect">
+<header class="uk-small-hidden header">
+  <nav class="uk-navbar header-nav">
+    <div class="uk-container uk-container-center">
+      <a class="uk-navbar-brand logo_link" routerLink="/home">
+        <img class="uk-responsive-height logo white" src="../assets/images/logo_white.png" alt="">
+        <img class="uk-responsive-height logo black" src="../assets/images/logo_black.png" alt="">
+      </a>
+      <div class="uk-navbar-flip uk-visible-large">
+        <ul class="uk-navbar-nav header-nav-list">
+          <li class="header_nav_list_item">
+            <a routerLinkActive="active" class="link_features header_nav_list_item_link" href="/home">Home</a>
+          </li>
+          <li class="header_nav_list_item">
+            <a routerLinkActive="active" class="link_offer header_nav_list_item_link" href="/product">Product</a>
+          </li>
+          <li class="header_nav_list_item">
+            <a routerLinkActive="active" class="link_pricing header_nav_list_item_link" href="/portfolio">Portfolio</a>
+          </li>
+          <li class="header_nav_list_item">
+            <a routerLinkActive="active" class="link_customers header_nav_list_item_link" href="/contact">Contact</a>
+          </li>
+          <li class="header_nav_list_item">
+            <a class="link_customers header_nav_list_item_link" routerLink="/login" routerLinkActive="active">
+              <div class="uk-button uk-border-rounded green_button container_button_message">
+                Login
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="uk-navbar-flip uk-hidden-large header_navbar_mobile_block">
+        <div data-ng-click="toggleMobileNav($event)" class="uk-navbar-toggle header_navbar_mobile"></div>
+      </div>
+    </div>
+  </nav>
+</header>
+
 <section
   class="uk-height-viewport uk-cover-background uk-position-relative uk-flex uk-flex-middle uk-overflow-hidden grey_overlay container">
   <ul class="uk-slideshow slideshow" data-uk-slideshow="{autoplay:true,kenburns:true}">
@@ -19,7 +56,9 @@
       <div class="uk-position-relative uk-margin-large-bottom uk-width-1-1 container_button">
         <div class="uk-button uk-border-rounded green_button container_button_message" routerLink="/register">Sign Up
         </div>
-        <div class="uk-button uk-border-rounded container_button_subscribe" routerLink="/portfolio"> Portfolio</div>
+        <a href="/portfolio">
+          <div class="uk-button uk-border-rounded container_button_subscribe"> Portfolio</div>
+        </a>
       </div>
     </div>
 
