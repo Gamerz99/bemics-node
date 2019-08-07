@@ -241,9 +241,17 @@ p {
 .header.active .black{
 	display: inline;
 }
-
+	
 .header.active .white{
 	opacity:0;
+}
+
+.header.active .uk-navbar-toggle{
+	color: #000;
+}
+
+.header2 .uk-navbar-toggle{
+	color: #000;
 }
 
 .black{
@@ -252,7 +260,7 @@ p {
     top: 0;
     left: 0;
 	z-index: 99;
-	padding-left: 15px;
+	margin-left: 15px;
 	transition: background 0.5s;
 }
 
@@ -777,7 +785,7 @@ p {
 /******* Gallery section *******/
 
 .gallery {
-	padding: 100px 0;
+	padding: 150px 0;
 	background: #fff;
 }
 .gallery_block {
@@ -807,8 +815,8 @@ p {
 }
 .gallery_overlay {
 	opacity: 0;
-	background: rgba(0, 0, 0, 0.5);
-	transition: opacity 0.4s;
+	background: rgb(244, 81, 30 , 0.8);
+	transition: opacity 0.2s;
 }
 .gallery_block:hover .gallery_overlay {
 	opacity: 1;
@@ -828,7 +836,7 @@ p {
 	font-size: 20px;
     font-family: "robotolight", sans-serif;
 	opacity: 0;
-	transition: bottom 0.3s ease-in 0.1s, opacity 0.3s ease-in 0.1s;
+	transition: bottom 0.2s ease-in 0.1s, opacity 0.2s ease-in 0.1s;
 }
 .gallery_block:hover .gallery_caption {
 	bottom: 0;
@@ -839,11 +847,15 @@ p {
 	bottom: -5px;
     font-size: 14px;
 	opacity: 0;
-	transition: bottom 0.3s ease-in 0.2s, opacity 0.3s ease-in 0.2s;
+	transition: bottom 0.2s ease-in 0.1s, opacity 0.2s ease-in 0.1s;
 }
 .gallery_block:hover .gallery_description {
 	bottom: 0;
 	opacity: 1;
+}
+
+.gallery_block:hover {
+	scale: 1.2;
 }
 
 /******* Team section *******/
@@ -1907,7 +1919,7 @@ p {
 		padding: 70px 0 20px;
 	}
 	.gallery {
-		padding: 70px 0 0;
+		padding: 100px 0 0;
 	}
 	.video_preview {
 		padding: 70px 0 75px;
@@ -1932,6 +1944,12 @@ p {
 	}
 	.logo {
 		height: 40px;
+	}
+	.black{
+		margin-top: 13px;
+	}
+	.login{
+		padding-top: 50px;
 	}
 	.header_navbar_mobile {
 		padding: 0;
@@ -2164,7 +2182,7 @@ p {
 }
 
 .login{
-	padding: 100px;
+	padding-top: 100px;
 }
 
 .login-container{

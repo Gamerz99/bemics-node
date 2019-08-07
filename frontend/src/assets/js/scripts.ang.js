@@ -53,36 +53,7 @@
 				$scope.scrollSpy();
 			}, 1000);
 
-			$scope.scrollNav = function (e) {
-				e.preventDefault();
-				$('#mobile_nav').removeClass('uk-active');
-				$scope.pageAnimate = function (page_block) {
-					$('html, body').animate({
-						scrollTop: $('.' + page_block + '').offset().top - $scope.menuActiveHeight
-					}, 700);
-				}
-				if ($(e.target).hasClass('link_features') || $(e.target).hasClass('container_arrow')) {
-					$scope.pageAnimate('elements');
-				} else if ($(e.target).hasClass('link_offer')) {
-					$scope.pageAnimate('features');
-				} else if ($(e.target).hasClass('link_pricing')) {
-					$scope.pageAnimate('price');
-				} else if ($(e.target).hasClass('link_clients')) {
-					$scope.pageAnimate('clients');
-				} else if ($(e.target).hasClass('link_facts')) {
-					$scope.pageAnimate('statistic');
-				} else if ($(e.target).hasClass('link_projects')) {
-					$scope.pageAnimate('gallery');
-				} else if ($(e.target).hasClass('link_team')) {
-					$scope.pageAnimate('team');
-				} else if ($(e.target).hasClass('link_customers')) {
-					$scope.pageAnimate('reviews');
-				} else if ($(e.target).hasClass('container_button_subscribe')) {
-					$scope.pageAnimate('subscribe');
-				} else if ($(e.target).hasClass('container_button_message')) {
-					$scope.pageAnimate('contact');
-				}
-			}
+
 		}
 
 		$scope.menuScroll();
