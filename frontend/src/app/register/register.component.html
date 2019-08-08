@@ -34,19 +34,19 @@
   </nav>
 </header>
 
-<section class="container login section">
+<section class="container uk-height-viewport login section">
   <div class="uk-container uk-container-center uk-width-1-1 uk-text-center uk-position-relative container_block">
     <div class="login-container container_block">
       <div id="output"></div>
       <div class="avatar"><img src="../../assets/images/icon.svg " width="70"></div>
       <div class="form-box ">
         <form action="" method="">
-          <input name="fname" type="text" placeholder="First Name">
+          <input class="form-start" name="fname" type="text" placeholder="First Name">
           <input name="lname" type="text" placeholder="Last Name">
           <input name="email" type="text" placeholder="Email">
           <input name="country" type="text" placeholder="Country">
           <input type="password" placeholder="Password">
-          <input type="rpassword" placeholder="Re-Password">
+          <input class="form-stop" type="password" placeholder="Confirm-Password">
           <div class="uk-width-small-1-1 uk-margin-bottom uk-margin-top">
             <button class="uk-width-1-1 uk-button button_custom_orange form_button" type="submit">Register</button>
             <a class="login-text" routerLink="/login">login</a>

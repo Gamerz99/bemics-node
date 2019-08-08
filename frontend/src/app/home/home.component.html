@@ -4,12 +4,11 @@
     <div class="uk-container uk-container-center">
       <a class="uk-navbar-brand logo_link" href="/home">
         <img class="uk-responsive-height logo white" src="../assets/images/logo_white.png" alt="">
-        <img class="uk-responsive-height logo black" src="../assets/images/logo_black.png" alt="">
       </a>
       <div class="uk-navbar-flip uk-visible-large">
         <ul class="uk-navbar-nav header-nav-list">
           <li class="header_nav_list_item">
-            <a routerLinkActive="active" class="link_features header_nav_list_item_link" href="/home">Home</a>
+            <a routerLinkActive="active" class="link_features header_nav_list_item_link active" href="/home">Home</a>
           </li>
           <li class="header_nav_list_item">
             <a routerLinkActive="active" class="link_offer header_nav_list_item_link" href="/product">Product</a>
@@ -37,13 +36,7 @@
 </header>
 
 <section
-  class="uk-height-viewport uk-cover-background uk-position-relative uk-flex uk-flex-middle uk-overflow-hidden grey_overlay container">
-  <ul class="uk-slideshow slideshow" data-uk-slideshow="{autoplay:true,kenburns:true}">
-    <li><img src="../assets/images/slide/bg1.jpg" alt=""></li>
-    <li><img src="../assets/images/slide/bg2.jpg" alt=""></li>
-    <li><img src="../assets/images/slide/bg3.jpg" alt=""></li>
-    <li><img src="../assets/images/slide/bg4.jpg" alt=""></li>
-  </ul>
+  class="uk-height-viewport uk-cover-background uk-position-relative uk-flex uk-flex-middle uk-overflow-hidden grey_overlay container main-slider main-slider-one">
 
   <div class="uk-container uk-container-center uk-width-1-1 uk-text-center uk-position-relative container_block">
 
@@ -68,7 +61,8 @@
 
 <section class="elements section">
   <div class="uk-container uk-container-center uk-text-center" data-uk-scrollspy="{cls:'uk-active'}">
-    <h3 class="uk-h3 uk-margin-bottom animated section_title elements_title">Great features</h3>
+    <h3 class="uk-h3 uk-margin-bottom animated section_title elements_title">GREAT FEATURES
+    </h3>
     <h4 class="uk-h4 uk-margin-large-bottom animated section_subtitle">It's time to build out the site and make some
       big decisions</h4>
     <div class="uk-grid uk-grid-large">
@@ -112,7 +106,7 @@
 
 <section class="features grey_overlay section">
   <div class="uk-container uk-container-center uk-position-relative" data-uk-scrollspy="{cls:'uk-active'}">
-    <h3 class="uk-h3 uk-text-center uk-text-contrast animated section_title features_title">We offer</h3>
+    <h3 class="uk-h3 uk-text-center uk-text-contrast animated section_title features_title">WE OFFER</h3>
     <h4 class="uk-h4 uk-text-contrast uk-text-center uk-margin-large-bottom animated section_subtitle">Take your
       website
       to the next level</h4>
@@ -195,7 +189,7 @@
 
 <section class="team section">
   <div class="uk-container uk-container-center uk-text-center" data-uk-scrollspy="{cls:'uk-active'}">
-    <h3 class="uk-h3 animated section_title team_title">Our team</h3>
+    <h3 class="uk-h3 animated section_title team_title">OUR TEAM</h3>
     <h4 class="uk-h4 uk-margin-large-bottom animated section_subtitle">We have a fantastic team of developers and
       engineers that are ready to help you</h4>
     <div class="uk-grid uk-grid-large">
@@ -299,71 +293,10 @@
   </div>
 </section>
 
-
-<section class="subscribe dark_overlay section">
-  <div class="uk-container uk-container-center uk-text-center" data-uk-scrollspy="{cls:'uk-active'}">
-    <h3 class="uk-h3 uk-text-contrast animated section_title subscribe_title">Subscribe to get latest news</h3>
-    <h4 class="uk-h4 uk-text-contrast uk-margin-large-bottom animated section_subtitle">Stay up to date with all
-      modern
-      trends in web design and development</h4>
-
-    <form data-ng-submit="mailchimpForm" class="uk-form animated form_sign_in" autocomplete="off">
-      <div class="uk-grid uk-grid-collapse uk-container-center uk-width-medium-2-3 uk-width-large-1-2 uk-margin-bottom">
-        <div class="uk-width-small-3-4 uk-margin-bottom">
-          <input name="email" class="uk-width-1-1 uk-text-contrast form_input" type="email"
-            placeholder="Enter your e-mail">
-        </div>
-        <div class="uk-width-small-1-4 uk-margin-bottom">
-          <button class="uk-width-1-1 uk-button button_custom_orange form_button" type="submit">Subscribe</button>
-        </div>
-      </div>
-
-      <div class="success">E-mail has been added successfully.</div>
-      <div class="success_response"></div>
-
-      <div class="error">E-mail must be valid and message must be longer than 1 character.</div>
-      <div class="error_response"></div>
-    </form>
-  </div>
-</section>
-
-<section class="clients section">
-  <div class="uk-container uk-container-center uk-text-center" data-uk-scrollspy="{cls:'uk-active'}">
-    <h3 class="uk-h3 animated section_title clients_title">Our clients who work with us</h3>
-    <h4 class="uk-h4 uk-margin-large-bottom animated section_subtitle">Both large national corporate clients and small
-      local businesses trust our team</h4>
-    <div class="uk-slidenav-position uk-align-center uk-margin-bottom animated clients_slider" data-uk-slider>
-      <div class="uk-slider-container clients_slider_container">
-        <ul class="uk-slider uk-grid-width-medium-1-4 clients_list">
-          <li class="clients_list_item">
-            <img class="clients_list_item_image" src="../../assets/images/logo/logo_1.png" alt="">
-          </li>
-          <li class="clients_list_item">
-            <img class="clients_list_item_image" src="../../assets/images/logo/logo_2.png" alt="">
-          </li>
-          <li class="clients_list_item">
-            <img class="clients_list_item_image" src="../../assets/images/logo/logo_3.png" alt="">
-          </li>
-          <li class="clients_list_item">
-            <img class="clients_list_item_image" src="../../assets/images/logo/logo_4.png" alt="">
-          </li>
-          <li class="clients_list_item">
-            <img class="clients_list_item_image" src="../../assets/images/logo/logo_5.png" alt="">
-          </li>
-        </ul>
-      </div>
-      <a href="#" class="uk-slidenav uk-slidenav-previous uk-border-circle clients_slider_arrow_left"
-        data-uk-slider-item="previous" draggable="false"></a>
-      <a href="#" class="uk-slidenav uk-slidenav-next uk-border-circle clients_slider_arrow_right"
-        data-uk-slider-item="next" draggable="false"></a>
-    </div>
-  </div>
-</section>
-
 <section class="statistic dark_overlay section" id="statistic">
   <div class="uk-container uk-container-center uk-text-contrast uk-position-relative uk-text-center"
     data-uk-scrollspy="{cls:'select uk-active'}">
-    <h3 class="uk-h3 uk-text-contrast animated section_title statistic_title">Some facts about us</h3>
+    <h3 class="uk-h3 uk-text-contrast animated section_title statistic_title">SOME FACT ABOUT US</h3>
     <h4 class="uk-h4 uk-text-contrast uk-margin-large-bottom animated section_subtitle">You will have a successful
       project that will deliver quality results for your business</h4>
     <div class="statistic_wrapper">
@@ -404,5 +337,40 @@
     </div>
   </div>
 </section>
+
+
+<!-- <section class="clients section">
+  <div class="uk-container uk-container-center uk-text-center" data-uk-scrollspy="{cls:'uk-active'}">
+    <h3 class="uk-h3 animated section_title clients_title">Our clients who work with us</h3>
+    <h4 class="uk-h4 uk-margin-large-bottom animated section_subtitle">Both large national corporate clients and small
+      local businesses trust our team</h4>
+    <div class="uk-slidenav-position uk-align-center uk-margin-bottom animated clients_slider" data-uk-slider>
+      <div class="uk-slider-container clients_slider_container">
+        <ul class="uk-slider uk-grid-width-medium-1-4 clients_list">
+          <li class="clients_list_item">
+            <img class="clients_list_item_image" src="../../assets/images/logo/logo_1.png" alt="">
+          </li>
+          <li class="clients_list_item">
+            <img class="clients_list_item_image" src="../../assets/images/logo/logo_2.png" alt="">
+          </li>
+          <li class="clients_list_item">
+            <img class="clients_list_item_image" src="../../assets/images/logo/logo_3.png" alt="">
+          </li>
+          <li class="clients_list_item">
+            <img class="clients_list_item_image" src="../../assets/images/logo/logo_4.png" alt="">
+          </li>
+          <li class="clients_list_item">
+            <img class="clients_list_item_image" src="../../assets/images/logo/logo_5.png" alt="">
+          </li>
+        </ul>
+      </div>
+      <a href="#" class="uk-slidenav uk-slidenav-previous uk-border-circle clients_slider_arrow_left"
+        data-uk-slider-item="previous" draggable="false"></a>
+      <a href="#" class="uk-slidenav uk-slidenav-next uk-border-circle clients_slider_arrow_right"
+        data-uk-slider-item="next" draggable="false"></a>
+    </div>
+  </div>
+</section> -->
+
 
 </html>
