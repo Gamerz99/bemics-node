@@ -389,12 +389,29 @@ p {
 	min-height: 40px;
     padding: 0 20px;
     line-height: 40px;
-	border: 1px solid #fff;
+	border: 1px solid #ddd;
 	background: none;
 	color: #fff;
 	font-size: 14px;
 	transition: background 0.3s, border 0.3s;
+	position: relative;
+	overflow: hidden;
 }
+
+.container_button_subscribe::before{
+	content: '';
+	position:absolute;
+	width: 20px;
+	height: 180%;
+	top: -20px;
+	background: rgba(255, 255, 255, 0.3);
+	transform: translateX(-70px) rotate(20deg);
+	transition: all .5s;
+}
+.container_button_subscribe:hover::before{
+	transform: translateX(80px) rotate(20deg);
+}
+
 .container_button_message {
 	background: #fff;
 	color: #444;
@@ -416,12 +433,29 @@ p {
 	background: #f9a02c;
 	color: #fff;
 	border: 1px solid #f9a02c;
+	position: relative;
+	overflow: hidden;
 }
 .green_button:hover {
 	background: #a76611;
 	color: #fff;
 	border: 1px solid #a76611;
+} 
+
+.green_button::before{
+	content: '';
+	position:absolute;
+	width: 20px;
+	height: 180%;
+	top: -20px;
+	background: rgba(255, 255, 255, 0.3);
+	transform: translateX(-70px) rotate(20deg);
+	transition: all .5s;
 }
+.green_button:hover::before{
+	transform: translateX(80px) rotate(20deg);
+}
+
 .container_arrow {
 	position: absolute;
 	top: auto;
@@ -1445,6 +1479,8 @@ p {
 	-moz-user-select: none;
 	-webkit-user-select: none;
 }
+
+
 .button_custom_teal {
 	color: #fff;
 	background-color: #00a393;
@@ -1506,7 +1542,21 @@ p {
 	border: 1px solid #f9a02c;
 	transition: background 0.3s;
 	border-radius: 5px 5px 5px 5px;
-	
+	position: relative;
+	overflow: hidden;
+}
+.button_custom_orange::before{
+	content: '';
+	position:absolute;
+	width: 50px;
+	height: 180%;
+	top: -20px;
+	background: rgba(255, 255, 255, 0.3);
+	transform: translateX(-200px) rotate(20deg);
+	transition: all .5s;
+}
+.button_custom_orange:hover::before{
+	transform: translateX(200px) rotate(20deg);
 }
 .button_custom_orange:hover,
 .button_custom_orange:active,
