@@ -202,7 +202,7 @@ p {
 .particles_effect .container {
 	background: url('../images/bg1.jpg') no-repeat 0 0;
 	background-size: cover;
-	background-attachment: fixed;
+	/* background-attachment: fixed; */
 }
 
 .particles_effect .container_block,
@@ -240,7 +240,7 @@ p {
 	left: 0;
 	right: 0;
 	z-index: 10;
-	transition: background 0.5s;
+	transition: background 0.3s;
 }
 .header.active {
 	background: #1d1d1d;
@@ -263,7 +263,7 @@ p {
     left: 0;
 	z-index: 99;
 	margin-left: 15px;
-	transition: background 0.5s;
+	transition: background 0.3s;
 }
 
 .header2 {
@@ -271,12 +271,12 @@ p {
 	left: 0;
 	right: 0;
 	z-index: 10;
-	transition: background 0.5s;
+	transition: background 0.3s;
 	background: #1d1d1d;
 	box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.3);
 }
 .logo_link {
-	transition: height 0.5s;
+	transition: height 0.3s;
 	display: inline-block;
 	position: relative;
 }
@@ -302,7 +302,7 @@ p {
 	line-height: 70px;
 }
 .header_navbar_mobile {
-	transition: height 0.5s;
+	transition: height 0.2s;
 	cursor: pointer;
 }
 .header.active .header_navbar_mobile {
@@ -506,7 +506,7 @@ p {
 	box-shadow: none;
 	background: #1d1d1d;
 	transition: box-shadow 0.5s, border 0.5s, text-shadow 0.5s;
-	text-shadow: 3px 3px 7px rgba(200,200,200,0.4);
+	text-shadow: 3px 3px 7px rgba(50,50,50,0.4);
 }
 .elements_item_label:hover {
 	border: 1px solid #1d1d1d;
@@ -806,6 +806,12 @@ p {
 	background-attachment: fixed;
 	border: 0;
 }
+.home-gallery {
+	padding: 0 0 0;
+	color: #000;
+	background: #1d1d1d;
+	border: 0;
+}
 .gallery_block {
 	margin-bottom: 10px !important;
 	border: 1px solid #333;
@@ -874,6 +880,11 @@ p {
 
 .gallery_block:hover {
 	scale: 1.2;
+}
+
+.more-button{
+	text-align: center;
+	margin-top: -100px;
 }
 
 /******* Team section *******/
@@ -995,7 +1006,7 @@ p {
 
 .reviews {
     padding: 100px 0 70px;
-	background: #f5f5f5;
+	background: #1d1d1d;
 }
 .reviews_slider {
 	width: 70%;
@@ -1007,11 +1018,11 @@ p {
 .reviews_message {
     padding: 20px;
 	margin: 0 40px 40px;
-    color: #777;
+    color: #ddd;
 	font-family: "robotolight", sans-serif;
     font-size: 16px;
-	background: #fff;
-    border: 1px solid #e6e6e6;
+	background: #282828;
+    border: 1px solid #555;
     border-radius: 6px;
 }
 .reviews_message:after {
@@ -1025,14 +1036,14 @@ p {
 	margin: auto;
     border-left: 18px solid transparent;
     border-right: 18px solid transparent;
-    border-top: 21px solid #fff;
+    border-top: 21px solid #282828;
 }
 .reviews_image {
 	border-radius: 100%;
 }
 .reviews_name {
 	margin-top: 5px;
-    color: #555;
+    color: #fff;
     font-size: 18px;
 }
 .reviews_position {
@@ -1046,17 +1057,17 @@ p {
     height: 50px;
 	line-height: 48px;
 	font-size: 30px;
-    background: #fff;
-    color: #121212;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.16), 0 2px 10px rgba(0,0,0,0.12);
+    background: #1d1d1d;
+    color: #ddd;
+    border: 1px solid #333;
 	transition: color 0.15s, background 0.15s;
 }
 .reviews .uk-slidenav-position .uk-slidenav:focus {
-    background: #fff;
-    color: #121212;
+    background: #1d1d1d;
+    color: #ddd;
 }
 .reviews .uk-slidenav-position .uk-slidenav:hover {
-	background: #fafafa;
+	background: #282828;
 }
 .reviews .uk-slidenav-position .uk-slidenav-next:before {
     display: block;
@@ -1225,10 +1236,12 @@ p {
 .form_input {
 	height: 45px !important;
 	font-size: 14px !important;
+	border-radius: 5px 5px 5px 5px !important;
 }
 .form_textarea {
 	min-height: 100px;
 	font-size: 14px !important;
+	border-radius: 5px 5px 5px 5px !important;
 }
 .form_button {
 	position: relative;
@@ -1334,10 +1347,8 @@ p {
 /******* Address *******/
 
 .address {
-    padding: 150px 0 100px;
-	background: url('../images/bg2.jpg') no-repeat center center;
-	background-size: cover;
-	background-attachment: fixed;
+    padding: 100px 0 100px;
+	background: #1d1d1d;
 	border: 0;
 }
 
@@ -1346,8 +1357,9 @@ p {
 	margin: 0 auto;
 }
 .address_label {
+	text-align: center;
 	color: #fff;
-	font-size: 70px;
+	font-size: 20px;
 	transition: text-shadow 0.5s;
 	text-shadow: 3px 3px 7px rgba(0,0,0,0.4);
 }
@@ -1358,11 +1370,16 @@ p {
 	color: #b3aaaa;
 }
 .address_text {
+	text-align: left;
+	padding-bottom: 10px;
 	color: #fff;
 	font-size: 16px;
     font-family: 'robotolight', sans-serif;
 }
 
+.address_item{
+	margin-bottom: 5px;
+}
 /******* Map *******/
 
 .map {
@@ -1488,6 +1505,8 @@ p {
 	background-color: #f9a02c;
 	border: 1px solid #f9a02c;
 	transition: background 0.3s;
+	border-radius: 5px 5px 5px 5px;
+	
 }
 .button_custom_orange:hover,
 .button_custom_orange:active,
@@ -1848,7 +1867,7 @@ p {
 }
 
 
-.login-container::before,.login-container::after{
+/* .login-container::before,.login-container::after{
     content: "";
     position: absolute;
     width: 100%;height: 100%;
@@ -1860,16 +1879,16 @@ p {
     -ms-transform: rotateZ(4deg);
     border: 1px solid #333;
 
-}
+} */
 
-.login-container::after{
+/* .login-container::after{
     top: 5px;
     z-index: -2;
     -webkit-transform: rotateZ(-2deg);
      -moz-transform: rotateZ(-2deg);
       -ms-transform: rotateZ(-2deg);
 
-}
+} */
 
 .avatar{
 	padding: 15px;
@@ -1909,14 +1928,6 @@ p {
 .form-start-stop{
 	border-radius: 5px 5px 5px 5px;
 }
-/* .form-box input[type="text"]{
-    border-radius: 5px 5px 0 0;
-}
-
-.form-box input[type="password"]{
-    border-radius: 0 0 5px 5px;
-    border-top: 0;
-} */
 
 .login-text{
 	color: #f9a02c;
@@ -1927,6 +1938,9 @@ p {
 	color: #a76611;
 }
 
+.round-button{
+	border-radius: 25px 25px 25px 25px;
+}
 /******* Media queries *******/
 
 @media screen and (max-width: 1600px) {
@@ -2090,6 +2104,10 @@ p {
 	.gallery {
 		padding: 100px 0 50px;
 	}
+
+	.home-gallery {
+		padding: 0 0 0;
+	}
 	.video_preview {
 		padding: 70px 0 75px;
 	}
@@ -2098,6 +2116,10 @@ p {
 	}
 	.login-container{
 		width: 300px;
+	}
+	.address_text {
+		text-align: center;
+		padding-bottom: 20px;
 	}
 }
 @media screen and (max-width: 767px) {
@@ -2211,6 +2233,10 @@ p {
 	.login-container{
 		width: 300px;
 	}
+	.address_text {
+		text-align: center;
+		padding-bottom: 20px;
+	}
 }
 @media screen and (max-width: 600px) {
 	.three_price_container {
@@ -2275,6 +2301,10 @@ p {
 	}
 	.login-container{
 		width: 300px;
+	}
+	.address_text {
+		text-align: center;
+		padding-bottom: 20px;
 	}
 }
 @media screen and (max-width: 375px) {

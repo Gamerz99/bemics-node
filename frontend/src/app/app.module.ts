@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ProductComponent } from './product/product.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
-import { ContactComponent } from './contact/contact.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { VerifyComponent } from './verify/verify.component';
@@ -17,7 +16,6 @@ import { VerifyComponent } from './verify/verify.component';
     HomeComponent,
     ProductComponent,
     PortfolioComponent,
-    ContactComponent,
     LoginComponent,
     RegisterComponent,
     VerifyComponent,
