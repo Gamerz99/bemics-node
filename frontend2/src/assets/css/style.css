@@ -921,7 +921,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   width: 100%;
   -webkit-transition: all 800ms cubic-bezier(0.77, 0, 0.175, 1);
   -o-transition: all 800ms cubic-bezier(0.77, 0, 0.175, 1);
-  transition: all 800ms cubic-bezier(0.77, 0, 0.175, 1);
+  transition: all 800ms  cubic-bezier(0.77, 0, 0.175, 1);
 }
 
 .ctn-preloader .loader.dark_bg .loader-section .bg {
@@ -937,9 +937,6 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 
 .ctn-preloader.loaded .loader-section .bg {
   width: 0;
-  -webkit-transition: 0.7s 0.3s allcubic-bezier(0.1, 0.1, 0.1, 1);
-  -o-transition: 0.7s 0.3s allcubic-bezier(0.1, 0.1, 0.1, 1);
-  transition: 0.7s 0.3s allcubic-bezier(0.1, 0.1, 0.1, 1);
 }
 
 @-webkit-keyframes spinner {
@@ -10267,9 +10264,9 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   -ms-flex-align: center;
   align-items: center;
   padding: 0px 33px;
-  background-image: -moz-linear-gradient(140deg, rgba(125, 13, 240, 0.9) 0%, rgba(58, 113, 235, 0.9) 100%);
-  background-image: -webkit-linear-gradient(140deg, rgba(125, 13, 240, 0.9) 0%, rgba(58, 113, 235, 0.9) 100%);
-  background-image: -ms-linear-gradient(140deg, rgba(125, 13, 240, 0.9) 0%, rgba(58, 113, 235, 0.9) 100%);
+  background-image: -moz-linear-gradient(140deg, #f9a02c 0%, #f14115 100%);
+  background-image: -webkit-linear-gradient(140deg, #f9a02c 0%, #f14115 100%);
+  background-image: -ms-linear-gradient(140deg, #f9a02c 0%, #f14115 100%);
   opacity: 0;
   visibility: visible;
   z-index: -1;
