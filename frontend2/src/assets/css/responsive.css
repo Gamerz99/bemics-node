@@ -1428,8 +1428,8 @@
     }
     .header_area .menu_six .cus_dark {
         margin-left: 30px;
-        border-color: #3d64f4;
-        color: #3d64f4;
+        border-color: #f9a02c;
+        color: #f9a02c;
         display: inline-block;
         margin-bottom: 15px;
     }
@@ -1437,8 +1437,8 @@
         margin-left: 30px !important;
     }
     .header_area .menu_five .menu_custfive {
-        border-color: #3d64f4;
-        color: #3d64f4;
+        border-color: #f9a02c;
+        color: #f9a02c;
         display: inline-block;
     }
     .header_area .menu_four .menu_custfive {
@@ -1454,10 +1454,10 @@
         margin-bottom: 10px;
     }
     .header_area_three .menu_four .menu_toggle .hamburger span{
-        background: #6754e2;
+        background: #f9a02c;
     }
     .header_area_three{
-        padding: 28px 0px;
+        padding: 0px 0px;
     }
     .header_area_six .container,.header_area_seven .container{
         position: relative;
@@ -1482,7 +1482,7 @@
         color: #051441;
     }
     .w_menu .nav-item:hover .nav-link, .w_menu .nav-item.active .nav-link{
-        color: #00aff0;
+        color: #f9a02c;
     }
     .prototype_banner_area{
         padding-top: 140px;
@@ -1491,22 +1491,22 @@
         color: #051441;
     }
     .menu_five .menu > .nav-item:hover .nav-link,.menu_five .menu > .nav-item.active .nav-link{
-        color: #3d64f4;
+        color: #f9a02c;
     }
     .menu_five .menu > .nav-item:hover .nav-link:before,.menu_five .menu > .nav-item.active .nav-link:before{
-        background: #3d64f4;
+        background: #f9a02c;
     }
     .menu_seven .menu > .nav-item:hover .nav-link,.menu_seven .menu > .nav-item.active .nav-link{
-        color: #4069eb;
+        color: #f9a02c;
     }
     .menu_seven .menu > .nav-item:hover .nav-link:before,.menu_seven .menu > .nav-item.active .nav-link:before{
-        background: #4069eb;
+        background: #f9a02c;
     }
     .menu_four .menu > .nav-item:hover .nav-link,.menu_four .menu > .nav-item.active .nav-link{
-        color: #6754e2;
+        color: #f9a02c;
     }
     .menu_four .menu > .nav-item:hover .nav-link:before,.menu_four .menu > .nav-item.active .nav-link:before{
-        background: #6754e2;
+        background: #f9a02c;
     }
     .payment_features_content.pl_70{
         padding-left: 0;
@@ -1976,10 +1976,11 @@
         padding-right: 10px;
     }
     .header_area .menu_seven a.Cus_seven {
-        color: #3d64f4;
+        color: #f9a02c;
         margin-left: 30px;
         display: inline-block;
         margin-bottom: 20px;
+        border-color: #f9a02c;
     }
     .domain_form_inner input{
         width: 50%;
@@ -3846,7 +3847,7 @@
         display: block;
     }
     .price_tab .nav-item .nav-link.active{
-        background: #00aff0;
+        background: #f9a02c;
         border-radius: 3px;
     }
     .partner_info .logo_item{
@@ -3877,7 +3878,7 @@
         top: 20px;
     }
     .price_tab.price_tab_two .nav-item .nav-link.active{
-        background: #5f2eed;
+        background: #f9a02c;
     }
     .get_content .app_btn{
         margin-top: 5px;

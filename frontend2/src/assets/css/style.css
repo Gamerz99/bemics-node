@@ -1826,7 +1826,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 }
 
 .menu_four .menu_toggle .hamburger span, .menu_four .menu_toggle .hamburger-cross span {
-  background: #fff;
+  background: #f9a02c;
 }
 
 .menu_five {
@@ -2156,7 +2156,8 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 .header_area_three .menu_four .btn_get {
   background: transparent;
   color: #f9a02c;
-  border-color: #f9a02c !important;;
+  border-color: #f9a02c !important;
+  display: inline-block;
 }
 
 .header_area_three .menu_four .btn_get:hover {
