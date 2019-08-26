@@ -57,11 +57,29 @@
       <div class="col-lg-7">
         <div class="login_info">
           <h2 class="f_p f_700 f_size_40 t_color3 mb_20">VERIFY</h2>
-          <form action="#" class="login-form mt_60">
+          <p>Please check your email</p>
+          <form #verifyForm="ngForm" (ngSubmit)="verify(data)" class="login-form mt_60">
             <div class="form-group text_box">
               <label class="f_p text_c f_400">Token</label>
-              <input type="text" placeholder="enter token">
+              <input type="text" name="token" [(ngModel)]="data.secrettoken" placeholder="enter token">
             </div>
+
+            <div *ngIf="loading" class="alert info">
+              <div class="alert_body">
+                <i class="loading-spinner"></i>
+                Loading! Please wait..
+              </div>
+              <div class="alert_close"><i class="icon_close"></i></div>
+            </div>
+
+            <div *ngIf="alert" class="alert error">
+              <div class="alert_body">
+                <i class="icon-close"></i>
+                Error Message! {{message}}
+              </div>
+              <div class="alert_close" (click)="alert_close()"><i class="icon_close"></i></div>
+            </div>
+
             <button type="submit" class="btn_three">Verify</button>
             <div class="alter-login text-center mt_30">
               Already Verify? <a class="login-link" href="/login">Login</a>

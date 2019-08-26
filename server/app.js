@@ -21,6 +21,7 @@ mongoose.connect(db, { useNewUrlParser: true }, err => {
 })
 
 const app = express();
+app.use(cors())
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

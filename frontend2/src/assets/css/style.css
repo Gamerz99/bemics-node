@@ -812,6 +812,17 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   width: 9em;
 }
 
+.loading-spinner {
+  -webkit-animation: spinner 1s infinite linear;
+  animation: spinner 1s infinite linear;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-top-color: #000000;
+  height: 1.5em;
+  margin: 0 auto 0.5em auto;
+  width: 1.5em;
+}
+
 .ctn-preloader .animation-preloader .txt-loading {
   font: bold 5em "Poppins", sans-serif;
   text-align: center;

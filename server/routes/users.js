@@ -56,7 +56,7 @@ router.post('/verify', async (req, res, next) => {
     const secrettoken = req.body.secrettoken
     const user = await users.findOne({ secrettoken: secrettoken });
     if (!user) {
-      res.status(404).json({ message: "Not Valid Token" });
+      res.status(404).json({ message: "Invalid Token" });
       return
     }
 
@@ -65,7 +65,7 @@ router.post('/verify', async (req, res, next) => {
 
     const update = await users.findByIdAndUpdate({ _id: user._id }, user);
     if (!update) {
-      res.status(404).json({ message: "Not Success" })
+      res.status(404).json({ message: "Verification fail" })
       return
     }
 
@@ -98,18 +98,24 @@ router.post('/', async (req, res, next) => {
     result.value.active = false;
     result.value.secrettoken = secrettoken;
 
-    const user = await new users(result.value)
-    const out = await user.save();
-    if (!out) {
-      res.status(500).json({ message: "Not Success" })
+    const html = 'Hi there, <br/> Thank you for registering! <br/><br/> Please verify your email by typing the following token <br/> Token :<b> ' + secrettoken + ' </b> <br/> On the following page : <a href="http://localhost:3000/users/verify"> http://localhost:3000/users/verify</a> <br/><br/> Thank you'
+    const from = "verification@bemics.com";
+    const subject = "Bemics.com Verification"
+
+    try {
+      await mailer.sendmail(from, result.value.email, subject, html);
+    }
+    catch (error) {
+      res.status(500).json({ message: "Invalid email" })
       return
     }
 
-    const html = 'Hi there, <br/> Thank you for registering! <br/><br/> Please verify your email by typing the following token <br/> Token :<b> ' + secrettoken + ' </b> <br/> On the following page : <a href="http://localhost:3000/users/verify"> http://localhost:3000/users/verify</a> <br/><br/> Thank you'
-    const from = "admin@bemics.com";
-    const subject = "Verification"
-
-    await mailer.sendmail(from, result.value.email, subject, html);
+    const user = await new users(result.value)
+    const out = await user.save();
+    if (!out) {
+      res.status(500).json({ message: "Registration fail" })
+      return
+    }
 
     res.status(200).send({ message: "success" })
 
@@ -141,7 +147,7 @@ router.post('/login', async (req, res, next) => {
     }
 
     if (!login.active) {
-      res.status(404).json({ message: "Inactive" })
+      res.status(404).json({ message: "Please activate account" })
       return
     }
 

@@ -46,7 +46,20 @@
             </a>
           </li>
         </ul>
-        <a class="btn_get btn_get_radious Cus_seven" href="/login">Login</a>
+        <a *ngIf="!login" class="btn_get btn_get_radious Cus_seven" href="/login">Login</a>
+        <ul *ngIf="login" class="navbar-nav menu ">
+          <li class="nav-item dropdown submenu">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Profile
+            </a>
+            <ul class="dropdown-menu">
+              <li class="nav-item"><a href="/profile" class="nav-link">Account</a></li>
+              <li class="nav-item"><a href="/logout" class="nav-link">Log Out</a></li>
+            </ul>
+          </li>
+        </ul>
+
       </div>
     </div>
   </nav>
@@ -489,7 +502,7 @@
     <div class="row mb_30">
       <div class="col-lg-4 col-sm-6">
         <div class="s_pricing-item">
-          <img class="shape_img" src="img/saas/price_line1.png" alt="">
+          <img class="shape_img" src="../../assets/images/price_line1.png" alt="">
           <div class="s_price_icon p_icon1">
             <i class="flaticon-mortarboard"></i>
           </div>
@@ -508,7 +521,7 @@
       </div>
       <div class="col-lg-4 col-sm-6">
         <div class="s_pricing-item">
-          <img class="shape_img" src="img/saas/price_line2.png" alt="">
+          <img class="shape_img" src="../../assets/images/price_line2.png" alt="">
           <div class="tag_label">Popular</div>
           <div class="s_price_icon p_icon2">
             <i class="flaticon-lightbulb"></i>
@@ -528,7 +541,7 @@
       </div>
       <div class="col-lg-4 col-sm-6">
         <div class="s_pricing-item">
-          <img class="shape_img" src="img/saas/price_line3.png" alt="">
+          <img class="shape_img" src="../../assets/images/price_line3.png" alt="">
           <div class="s_price_icon p_icon3">
             <i class="flaticon-target"></i>
           </div>
